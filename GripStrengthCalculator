@@ -1,0 +1,35 @@
+
+package gripstrengthcalc;
+
+import java.util.Scanner;
+
+public class GripStrengthCalc {
+
+    public static void main(String[] args) {
+       double reps = 0.0;
+       double sets = 0.0;
+       double weight = 0.0;
+       
+       Scanner sc = new Scanner(System.in);
+       
+       System.out.println("Welcome to the Grip Strength Calculator");
+       System.out.println();
+       System.out.println("Please Enter the number of sets you did:  ");
+       sets = Double.parseDouble(sc.nextLine());
+        
+       System.out.println("Please Enter the number of reps you did:  ");
+       reps = Double.parseDouble(sc.nextLine());
+       
+       System.out.println("Please Enter the weight used:  ");
+       weight = Double.parseDouble(sc.nextLine());
+       
+       double volume = reps*sets*weight;
+       
+       System.out.println("Your volume for the exercise:  "+ volume);
+
+       
+       
+        
+    }
+    
+}
