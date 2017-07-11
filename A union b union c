@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class apples{
+public static void main(String args[]){
+Scanner sc = new Scanner(System.in);  // we use this to get info from the keyboard
+double fnum, snum, tnum, answer;
+
+System.out.println("enter first number");
+fnum = sc.nextDouble();
+System.out.println("enter Second number");
+snum = sc.nextDouble();
+System.out.println("enter third number");
+tnum = sc.nextDouble();
+answer = fnum + snum + tnum - fnum*snum - fnum*tnum - tnum*snum + tnum*fnum*snum ;
+System.out.println("a union b union c =  " + answer);
+}}
