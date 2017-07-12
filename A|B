@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class apples{
+public static void main(String args[]){
+Scanner sc = new Scanner(System.in);  // we use this to get info from the keyboard
+double fnum, snum, answer;
+
+System.out.println("enter probablity A intersection B");
+fnum = sc.nextDouble();
+
+System.out.println("enter probability of B");
+snum = sc.nextDouble();
+answer = (fnum*snum)/snum ;
+System.out.println(" Then the conditional value of A|B is =  " + answer);
+}}
